@@ -1,3 +1,556 @@
-h1{
-  color: red;
+@import "settings/colors" ;
+@import "settings/fonts";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  
 }
+
+
+
+.HomeHeader{
+  width: 100%;
+  height: 50px;
+ // background-color: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  
+}
+.HomeHeader-One{
+  width: 200px;
+  height: 20px;
+  background-color: brown;
+  display: flex;
+  justify-content: space-around;
+  .button{
+    border: none;
+    width: 100px;
+    height: 20px;
+    font-family: $font-base;
+    font-weight: 300;
+    font-size: 12px;
+   // background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+}
+
+.HomeHeader-Two{
+  width: 33%;
+  height: 20px;
+  background-color: brown;
+  display: flex;
+  justify-content: space-around;
+  .button{
+    border: none;
+    width: 300px;
+    height: 20px;
+    font-family: $font-base;
+    font-weight: 300;
+    font-size: 15px;
+    //background-color: #ffffff;
+  }
+  .button-One{
+    border: none;
+    width: 200px;
+    height: 20px;
+    font-family: $font-base;
+    font-weight: 300;
+    font-size: 15px;
+    //background-color: #ffffff;
+  }
+  .HomeHeader-Two_button{
+    width: 400px;
+  }
+}
+.xx{
+  background-image: url(/assets/Home-Hero-Image.jpg); 
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  margin-left: -350px;
+  height: 600px;
+ 
+}
+.HomeCenter{
+  width: 100%;
+  height: 500px;
+  //background-color: red;
+  //background-image: url(/assets/Home-Hero-Image.jpg); 
+  // background-size: 600px;
+  // background-position: left;
+  // background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+  .HomeCenter-One{
+    width: 500px;
+    height: 200px;
+    //justify-content: end;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .HomeCenter_BC{
+    width: 50%;
+    height: 20px;
+    background-image: url(/assets/Decoration.svg);
+    }
+    .HomeCenter_Text{
+      font-family: $font-base;
+      font-size: 30px;
+      font-weight: bold
+    }
+  }
+  .HomeCenter-Two{
+    width: 500px;
+    height: 150px;
+    //justify-content: end;
+    margin-right: 150px;
+    display: flex;
+    //flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .button{
+      width: 210px;
+      height: 100px;
+      background-color: #ffffff;
+      border: 1px solid #000000;
+      font-family: $font-base;
+      font-size: 30px;
+      //margin-left: 20px;
+      text-decoration: none;
+      color: #000000;
+      text-align: center;
+    }
+  }
+
+.HomeThreeColumns{
+  background-color: $color-three;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  justify-content: space-around;
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-three;
+    width: 30%;
+    h2,a,p{
+      margin-top: 20px;
+    }
+    h2{
+      width: 50px;
+      height: 120px;
+      text-align: center;
+      font-size: 90px;
+    }
+    a{
+      width: 200px;
+      height: 25px;
+      text-align: center;
+    }
+    p{
+      width: 330px;
+      height: 70px;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}
+.SimpleStep_Title{
+  background-color: #ffffff;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  font-size: 30px;
+  background-image: url(/assets/Decoration.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  //align-items: flex-start;
+  justify-content: center;
+  margin-top: 50px;
+  font-family: $font-base;
+  
+}
+.SimpleStep{
+  background-color: $color-one;
+  width: 100%;
+  height: 325px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  div{
+    width: 20%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .icon-One{
+    width: 90px;
+    height: 90px;
+    background-image: url(/assets/Icon-1.svg);
+    background-repeat: no-repeat;
+  }
+  .icon-Two{
+    width: 90px;
+    height: 90px;
+    background-image: url(/assets/Icon-2.svg);
+    background-repeat: no-repeat;
+  }
+  .icon-Three{
+    width: 90px;
+    height: 90px;
+    background-image: url(/assets/Icon-3.svg);
+    background-repeat: no-repeat;
+  }
+  .icon-Four{
+    width: 90px;
+    height: 90px;
+    background-image: url(/assets/Icon-4.svg);
+    background-repeat: no-repeat;
+  }
+  h3{
+    border-bottom:1px solid black;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  
+}
+.SimpleStepButton{
+ // background-color: red;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button{
+    width: 270px;
+    height: 120px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    font-family: $font-base;
+    font-weight: 300;
+    font-size: 36px;
+  }
+}
+.AboutUs{
+  background-color: hotpink;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AboutUs_Text{
+  background-color: $color-one;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .AboutUs_Text_Icon{
+    width: 150px;
+    height: 150px;
+    background-image: url(/assets/Signature.svg);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    margin-left: 400px;
+  }
+  h3{
+    font-size: 30px;
+    width: 100px;
+    height: 30px;
+  }
+  a{
+    width: 250px;
+    height: 30px;
+    background-image: url(/assets/Decoration.svg);
+  }
+  p{
+    width: 70%;
+    height: 200px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.AboutUs_Picture{
+  background-image: url(/assets/People.jpg);
+  background-size: 700px;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+}
+.WhoWeHelp{
+  background-color: #ffffff;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .WhoWeHelp_A{
+    height: 20px;
+    width: 12%;
+    background-image: url(/assets/Decoration.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.WhoWeHelp_Title{
+  width: 25%;
+  height: 50px;
+  font-size: 28px;
+  text-align: center;
+  //background-color: chocolate;
+}
+.WhoWeHelp_ThreeColumns{
+  //background-color: yellow;
+  width: 70%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div{
+    width: 30%;
+    height: 60px;
+    //background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+  }
+  button{
+    width: 100%;
+    height: 70%;
+    text-align: center;
+  }
+}
+.WhoWeHelp_Text{
+  width: 30%;
+  height: 70px;
+  //background-color: white;
+  p{
+    text-align: center;
+  }
+}
+.WhoWeHelp_Fundactions{
+  //background-color: red;
+  width: 70%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.WhoWeHelp_Fundactions_Position{
+  //background-color: yellow;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #000000;
+  .Box-A{
+    width: 50%;
+    height: 100%;
+    //background-color: gray;
+  }
+  .Box-B{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    //background-color: green;
+  }
+}
+.Contact{
+  width: 100%;
+  height: 500px;
+  //background-color: $color-one ;
+  display: flex;
+}
+.Contact_Picture{
+  background-image: url(/assets/Background-Contact-Form.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity : 30%;
+  width: 50%;
+}
+.Contact_Form{
+  //background-color: honeydew;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .errorSend{
+    font-size: 12px;
+  }
+}
+.Contact_Form_A{
+  width: 35%;
+  height: 30px;
+  background-image: url(/assets/Decoration.svg);
+  background-position: center;
+}
+.Form{
+  //background-color: hotpink;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //align-items: center;
+  .Form-A{
+    width: 100%;
+    height: 100px;
+    //background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    input{
+      border: none;
+      border-bottom: 1px solid ;
+      margin-top: 10px;
+    }
+   
+  }
+  .Form-B{
+    width: 90%;
+    height: 150px;
+    margin-left: 30px;
+    //background-color: blue;
+    .input{
+      width: 90%;
+      height: 100px;
+      border: none;
+      border-bottom: 1px solid $color-four;
+      margin-top: 10px;
+    }
+    .input_Send{
+      width: 150px;
+      height: 50px;
+      margin-left: 70%;
+      background-color: #ffffff;
+      border: 1px solid $color-four ;
+      margin-top: 20px;
+    }
+  }
+}
+
+.Contact_Footer{
+  width: 100%;
+  height: 50px;
+  //background-color: brown;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  .C{
+    width: 56%;
+    height: 100%;
+    display: flex;
+    //flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .Icon{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: flex-end;
+    //margin-left: 0px;
+    
+    
+  }
+  .Icon_One{
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/Facebook.svg);
+    background-size: contain;
+    
+  };
+  .Icon_Two{
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/Instagram.svg);
+    background-size: contain;
+    margin-left: 20px;
+  };
+}
+.Log{
+  width: 100%;
+  height: 500px;
+  //background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.Log_Center{
+  width: 35%;
+  height: 400px;
+  //background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  
+  p{
+    width: 60%;
+    height: 30px;
+    background-image: url(/assets/Decoration.svg);
+    background-position:center;
+  }
+  .Log_One{
+    width: 60%;
+    height: 150px;
+    background-color: $color-one;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    label{
+      width: 70%;
+    }
+    input{
+      width: 100%;
+      background-color: $color-one;
+      border: none;
+      border-bottom: 1px solid #000000;
+    }
+  }
+  .Log_two{
+    width: 60%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    button{
+      width: 100px;
+      background-color: $color-one;
+      border: none;
+      font-weight: $font-base;
+      font-size: 10px;
+    }
+  }
+}
+
