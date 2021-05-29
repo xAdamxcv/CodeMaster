@@ -1,16 +1,21 @@
 import { useState } from "react"
 import arr from "./obj"
+import arrText from "./objText"
 
 let WhoWeHelp_Fundactions = () =>{
 
-  
+    
     let fundacje = arr[0]
     let organization = arr[1]
     let lokal = arr[2]
 
+    let fundacjeText = arrText[0]
+    let organizationText = arrText[1]
+    let lokalText = arrText[2]
     
-
+console.log(arr,arrText)
     let [posts,setPosts]= useState(fundacje)
+    let [postText, setPostText] = useState(fundacjeText)
     let [currentPage, setCurrentPage] = useState(1)
     let [postsPerPage, setPostsPerPage] = useState(3)
     let [display, setDispaly] = useState("flex")
@@ -20,14 +25,17 @@ let WhoWeHelp_Fundactions = () =>{
 
     let handleClikFundacje = () => {
         setPosts(fundacje)
+         setPostText(fundacjeText)
         setDispaly("flex")
     }
     let handleClikOrganization = () => {
         setPosts(organization)
+        setPostText(organizationText)
         setDispaly("flex")
     }
     let handleClikLokal = () => {
         setPosts(lokal)
+        setPostText(lokalText)
         setDispaly("none")
     }
 
@@ -47,6 +55,10 @@ let WhoWeHelp_Fundactions = () =>{
 
     return(
         <>
+        <div className="WhoWeHelp_Text">
+            <p>{postText}</p>
+        </div>
+
         <div className="WhoWeHelp_ThreeColumns">
             <div>
                 <button onClick={handleClikFundacje}>Fundacjom</button>
@@ -64,12 +76,12 @@ let WhoWeHelp_Fundactions = () =>{
                 {currentPost.map(function(el){
                     return(
                         <>
-                            <div key={5} className="Box-A">
-                                <p key={1}>Fundacja{`${el.fundacja}`}</p>
-                                <a key={2}>Cel i misja:{`${el.cel}`}</a>
+                            <div key={5 * Math.random().toString()} className="Box-A">
+                                <p key={5 * Math.random().toString()}>Fundacja{`${el.fundacja}`}</p>
+                                <a key={5 * Math.random().toString()}>Cel i misja:{`${el.cel}`}</a>
                             </div>
-                            <div key={3} className="Box-B">
-                                <p key={4}>{`${el.asortyment}`}</p>
+                            <div key={5 * Math.random().toString()} className="Box-B">
+                                <p key={5 * Math.random().toString()}>{`${el.asortyment}`}</p>
                             </div>
                         </>
                     )
@@ -78,8 +90,8 @@ let WhoWeHelp_Fundactions = () =>{
                     
                     {pageNumber.map(function(el){
                        return (
-                            <li style={{display: display}}>
-                                <a style={{display: display}} onClick={() => paginate(el)}>{el}</a>
+                            <li key={5 * Math.random().toString()} style={{display: display}}>
+                                <a key={5 * Math.random().toString()} style={{display: display}} onClick={() => paginate(el)}>{el}</a>
                             </li>
                        )
                     })}

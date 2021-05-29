@@ -13,18 +13,9 @@ let WhoWeHelp = () =>{
  
     return(
         <section className="WhoWeHelp">
-
-        
-
-
             <WhoWeHelp_Title />
             <p className="WhoWeHelp_A"></p>
-
-
-            <WhoWeHelp_Text />
-            <WhoWeHelp_Fundactions />
-        
-            
+            <WhoWeHelp_Fundactions />            
         </section>
     )
 }

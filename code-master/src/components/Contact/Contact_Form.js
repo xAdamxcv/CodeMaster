@@ -24,7 +24,7 @@ let Contact_Form = ({ addP }) => {
 
         e.preventDefault();
         addP({name,email,message})
-       //console.log({name,email,message})
+        // console.log({name,email,message})
         fetch("https://fer-api.coderslab.pl/v1/portfolio/contact",{
             method:'POST',
             headers:{
@@ -45,12 +45,12 @@ let Contact_Form = ({ addP }) => {
                 setSuccessSend(false)
                 setBorderBottomColor("#DC143C")
             }
-            console.log(data, "data")})
+        })
         
         
        
     };
-console.log(borderBottomColor)
+
     
         
     

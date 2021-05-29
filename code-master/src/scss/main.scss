@@ -240,7 +240,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  button{
+  a{
     width: 270px;
     height: 120px;
     border: 1px solid #000000;
@@ -248,7 +248,15 @@
     font-family: $font-base;
     font-weight: 300;
     font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    
   }
+
+  
 }
 .AboutUs{
   background-color: hotpink;
@@ -495,7 +503,7 @@
   justify-content: space-around;
   flex-direction: column;
   
-  p{
+  .p{
     width: 60%;
     height: 30px;
     background-image: url(/assets/Decoration.svg);

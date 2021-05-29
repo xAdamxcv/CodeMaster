@@ -3,7 +3,9 @@
 let SimpleStepButton = () =>{
     return(
         <div className="SimpleStepButton">
-            <button > ODDAJ<br/> RZECZY</button>
+            
+                <a className="button" href="/Log/Log.js#/Log/Log.js">ODDAJ<br/> RZECZY</a>
+            
         </div>
     )
 }
