@@ -38,7 +38,7 @@ let Contact_Form = ({ addP }) => {
                 console.log("suces")
                 setSuccessSend(true)
                 setErrorSend(false)
-                setBorderBottomColor("#000000")
+                setBorderBottomColor("#737373")
 
             }else{
                 setErrorSend(true)
@@ -51,15 +51,21 @@ let Contact_Form = ({ addP }) => {
        
     };
 
-    
+    function SendClear(){
+        setTimeout(() => {
+            setSuccessSend(false)
+            setErrorSend(false)
+            setBorderBottomColor("#000000")
+        },8000)
+    }
         
     
     return(
         <div className="Contact_Form">
             <h2>Skontaktuj sie z nami</h2>
-            {succesSend && <h3 style={{color: "green"}}>wysłano pomyślnie</h3>}
+            {succesSend && <h3 classSend="succesSend" style={{color: "green", marginRight: 30}}>wysłano pomyślnie</h3>}
             
-            <a className="Contact_Form_A"></a>
+            <p className="Contact_Form_A"></p>
             <div className="Form">
                 <form onSubmit={handleSubmit} >
                 <div className="Form-A">
@@ -82,7 +88,7 @@ let Contact_Form = ({ addP }) => {
                     {errorSend && <h3 className="errorSend"  style={{color: "red"}}>Wiadomość musi mieć conajmniej 120 znaków</h3>}
 
                     </label><br/>
-                    <input className="input_Send" type="submit" value="wyślij" />
+                    <input className="input_Send" type="submit" value="wyślij" onClick={SendClear}/>
                 </div>
                 
                 </form>

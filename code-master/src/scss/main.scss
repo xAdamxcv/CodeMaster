@@ -306,14 +306,30 @@
   width: 50%;
   height: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .WhoWeHelp{
   background-color: #ffffff;
   width: 100%;
-  height: 550px;
+  height: 770px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
   .WhoWeHelp_A{
     height: 20px;
     width: 12%;
@@ -324,18 +340,35 @@
 }
 .WhoWeHelp_Title{
   width: 25%;
-  height: 50px;
-  font-size: 28px;
-  text-align: center;
-  //background-color: chocolate;
-}
-.WhoWeHelp_ThreeColumns{
-  //background-color: yellow;
-  width: 70%;
-  height: 100px;
+  font-size: 26px;
+  font-family: $font-base;
+  font-weight: 400  ;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.WhoWeHelp_ThreeColumns{
+  //background-color: yellow;
+  width: 60%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .WWH_Button{
+    width: 28%;
+    height: 90%;
+    background: none;
+    border: none;
+    font-size: 19px;
+    font-family: $font-base;
+    font-weight: 400;
+  }
+  .WWH_Button:active{
+    border: 1px solid black;
+  }
+  .WWH_Button:hover{
+    border: 1px solid black;
+  }
   div{
     width: 30%;
     height: 60px;
@@ -352,42 +385,143 @@
   }
 }
 .WhoWeHelp_Text{
-  width: 30%;
-  height: 70px;
-  //background-color: white;
+  width: 42%;
+  height: 10%;
   p{
     text-align: center;
+    font-size: 18px;
+    font-family: $font-base;
+    font-weight: 400;
+
   }
 }
 .WhoWeHelp_Fundactions{
   //background-color: red;
-  width: 70%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 77%;
+  height: 240px;
+  margin-top: 3%;
 }
+.WhoWeHelp_Fundactions_Position{
+  //background-color: green;
+  width: 100%;
+  height: 100%;
+  
+}
+.Boxs{
+  display: flex;
+  height: 33%;
+
+  .Box-A{
+   // background-color: grey;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .B-A-One{
+     // background-color: red;
+      font-size: 20px;
+      font-family: $font-Merriweather;
+      font-weight: 300;
+      // font: normal normal 300 26px/31px Merriweather;;
+    }
+    .B-A-Two{
+      font-size: 15px;
+      font-family: $font-Merriweather;
+      font-weight: 300;
+    }
+  }
+  .Box-B{
+    //background-color: hotpink;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    p{
+      font-size: 15px;
+      font-family: $font-Merriweather;
+      font-weight: 300;
+      margin-right: 20px;
+    }
+  }
+}
+.Boxs-border{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.ListPagination{
+  width: 150px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  li{
+    width: 25%;
+    height: 37%;
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+    a:checked{
+      border: 1px solid black;
+    }
+    a:hover{
+      border: 1px solid black;
+    }
+  }
+}
+
+
+
+
+
+
 
 .Contact{
   width: 100%;
-  height: 500px;
+  height: 750px;
+}
+.Contact-div{
+  width: 100%;
+  height: 100%;
   //background-color: $color-one ;
   display: flex;
+  position: relative;
+  
 }
 .Contact_Picture{
-  background-image: url(/assets/Background-Contact-Form.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity : 30%;
-  width: 50%;
+ width: 50%;
+ height: 107%;
+  div{
+    width: 207%;
+    height: 100%;
+   
+    background-image: url(../assets/Background-Contact-Form.jpg);
+    background-size: 1438px 854px;
+    background-repeat: no-repeat;
+    opacity: 18%;
+    margin-left: -123px;
+    
+  }
 }
 .Contact_Form{
-  //background-color: honeydew;
-  width: 50%;
+   //background-color: red;
+  width: 64%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 560px;
+  h2, p{
+   margin-left: -27px;
+  }
   .errorSend{
     font-size: 12px;
   }
@@ -397,48 +531,62 @@
   height: 30px;
   background-image: url(/assets/Decoration.svg);
   background-position: center;
+  
 }
 .Form{
   //background-color: hotpink;
-  width: 100%;
+  width: 55%;
   height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  //align-items: center;
+  justify-content: space-evenly;
   .Form-A{
     width: 100%;
     height: 100px;
-    //background-color: yellow;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    label{
+      width: 45%;
+      font-family: $font-base;
+      font-size: 16px;
+      font-weight: 600;
+    }
     input{
+      width: 100%;
       border: none;
       border-bottom: 1px solid ;
-      margin-top: 10px;
+      
+      //margin-top: 10px;
     }
    
   }
   .Form-B{
-    width: 90%;
+    width: 100%;
     height: 150px;
-    margin-left: 30px;
-    //background-color: blue;
+    label{
+      font-family: $font-base;
+      font-size: 16px;
+      font-weight: 600;
+    }
     .input{
-      width: 90%;
+      width: 98%;
       height: 100px;
       border: none;
       border-bottom: 1px solid $color-four;
       margin-top: 10px;
+      
     }
     .input_Send{
       width: 150px;
       height: 50px;
-      margin-left: 70%;
+      margin-left: 64.5%;
       background-color: #ffffff;
       border: 1px solid $color-four ;
       margin-top: 20px;
+      font-family: $font-base;
+      font-size: 18px;
+      font-weight: 300;
     }
   }
 }

@@ -15,13 +15,13 @@ let Contact = ({ addP }) => {
       }
       console.log(state)
     return(
-        <div id="Contact" href="Contact">
-            <section className="Contact" >
+        <section className="Contact"id="Contact" href="Contact">
+            <div className="Contact-div" >
                 <Contact_Picture />
                 <Contact_Form addP={handleAdd}/>
-            </section>
+            </div>
             <Contact_Footer />
-        </div>
+        </section>
     )
 }
 

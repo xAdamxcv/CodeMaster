@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
     HashRouter,
     Route,
@@ -15,14 +16,23 @@ import HomeHeader_Two from './HomeHeaderTwo';
 
 let HomeHeader = () => {
 
-    // let scrollContact = ()=>{
-    //     scroll
+    let [startLink, setStartLink] = useState("")
+    let [link, setLink] = useState("/Log/Log.js")
+    // function LinkTo() {
+    //     setStartLink(el => !el)
+    //     if(startLink === true) {
+    //         setLink("/#")
+    //     }
     // }
+
+    // console.log(props.value)
+
     return(
         <section className="HomeHeader">
             <div className="HomeHeader-One">
                 
-                <Link className="button" exact to="/Log/Log.js">Zaloguj</Link>
+                <Link className="button" to="/Log/Log.js">Zaloguj</Link>
+                <Link className="button" to="/#">Zaloguj</Link>
                 <Link className="button" to="/rejestracja">Załóż konto</Link>
                 
             </div>

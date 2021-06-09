@@ -2,34 +2,34 @@ import React from "react"
 
 
     let fundacje = [
-        {id: 1, fundacja: "Dbam o zdrowie1", cel: "pomoc osobą w trudnej sytuacji1", asortyment: "fvdfvsdfvadfvafvasdvsvsdvsdvsfvasdfvsfvsdvadsdfvadfbad1" },
-        {id: 2, fundacja: "Dbam o zdrowie2", cel: "pomoc osobą w trudnej sytuacji2", asortyment: "fvdfvsdfvadfvadvasdvsvsdvsdvsfvasdfvsfvsdvadsdfvadfbad2"},
-        {id: 3, fundacja: "Dbam o zdrowie3", cel: "pomoc osobą w trudnej sytuacji3", asortyment: "fvdfvsdfvadfvadfasdvsvsdvsdvsfvasdfvsfvsdvadsdfvadfbad3"},
-        {id: 4, fundacja: "Dbam o zdrowie4", cel: "pomoc osobą w trudnej sytuacji4", asortyment: "fvdfvsdfvadfvadfvsdvsvsdvsdvsfvadfvsfvsdvadsdfvadfbad4"},
-        {id: 5, fundacja: "Dbam o zdrowie5", cel: "pomoc osobą w trudnej sytuacji5", asortyment: "fvdfvsdfvadfvadfvadvsvsdvsdvsfvadfvsfvsdvadsdfvadfbad5"},
-        {id: 6, fundacja: "Dbam o zdrowie6", cel: "pomoc osobą w trudnej sytuacji6", asortyment: "fvdfvsdfvadfvadfvasvsvsdvsdvsfvasfvsfvsdvadsdfvadfbad6"},
-        {id: 7, fundacja: "Dbam o zdrowie7", cel: "pomoc osobą w trudnej sytuacji7", asortyment: "fvdfvsdfvadfvadfvasdsvsdvsdvsfvasdfvsfvsdvadsdfvadfbad7"},
-        {id: 8, fundacja: "Dbam o zdrowie8", cel: "pomoc osobą w trudnej sytuacji8", asortyment: "fvdfvsdfvadfvadfvasdvvsdvsdvsfvasdfvsfvsdvadsdfvadfbad8"},
-        {id: 9, fundacja: "Dbam o zdrowie9", cel: "pomoc osobą w trudnej sytuacji9", asortyment: "fvdfvsdfvadfvadfvasdvsvdvsdvsfvadfvsfvsdvadsdfvadfbad9"}
+        {id: 1, fundacja: 'Fundacja "Dbam o zdrowie 1"', cel: "Cel i misja: Pomoc osobą w trudnej sytuacji1", asortyment: "ubrania, jedzenie sprzęt AGD, meble, zabawki 1" },
+        {id: 2, fundacja: 'Fundacja "Dla dzieci 2"', cel: "Cel i misja: Pomoc dzieciom z ubogich rodzin 2", asortyment: "ubrania, meble, zabawki 2"},
+        {id: 3, fundacja: 'Fundacja "Bez domu 3"', cel: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania 3", asortyment: "ubrania, jedzenie, ciepłe koce3"},
+        {id: 4, fundacja: 'Fundacja "Lorem ipsum 4"', cel: "Cel i misja: pomoc osobą w trudnej sytuacji4", asortyment: "fvdfvsdfvadfvad 4"},
+        {id: 5, fundacja: 'Fundacja "Lorem ipsum 5"', cel: "Cel i misja: pomoc osobą w trudnej sytuacji5", asortyment: "fvdfvsdfvadfvad 5"},
+        {id: 6, fundacja: 'Fundacja "Lorem ipsum 6"', cel: "Cel i misja: pomoc osobą w trudnej sytuacji6", asortyment: "fvdfvsdfvadfvad 6"},
+        {id: 7, fundacja: 'Fundacja "Lorem ipsum 7"', cel: "Cel i misja: pomoc osobą w trudnej sytuacji7", asortyment: "fvdfvsdfvadfvadf 7"},
+        {id: 8, fundacja: 'Fundacja "Lorem ipsum 8"', cel: "Cel i misja: pomoc osobą w trudnej sytuacji8", asortyment: "fvdfvsdfvadfvadf 8"},
+        {id: 9, fundacja: 'Fundacja "Lorem ipsum 9"', cel: "Cel i misja: pomoc osobą w trudnej sytuacji9", asortyment: "fvdfvsdfvadfvad 9"}
     ];
     
     let fundacjeText = "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym sie zajmują, komu pomagamy i czego potrzebują";
    
     let organization = [
-        {id: 1, fundacja: "Organization1", cel: "pomoc osobą w trudnej sytuacji1", asortyment: "fvdfvsdfvadfvadfvasdvsvsvsfvasdfvsfvsdvadsdfvadfbad1"},
-        {id: 2, fundacja: "Organization2", cel: "pomoc osobą w trudnej sytuacji2", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvasdfvsfvsdvadsdfvadfbad2"},
-        {id: 3, fundacja: "Organization3", cel: "pomoc w trudnej sytuacji3", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfvasdfvsfvsdvadsdfvadfbad3"},
-        {id: 4, fundacja: "Organization4", cel: "pomoc osobą w trudnej sytuacji4", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfvasdfvsdvadsdfvadfbad4"},
-        {id: 5, fundacja: "Organization5", cel: "pomoc osobą w trudnej sytuacji5", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfvdfvsfvsdvadsdfvadfbad5"},
-        {id: 6, fundacja: "Organization6", cel: "pomoc osobą w trudnej sytuacji6", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfva1fvsdvadsdfvadfbad6"}
+        {id: 1, fundacja: "Organizacja 'Lorem ipsum 1'", cel: "pomoc osobą w trudnej sytuacji1", asortyment: "fvdfvsdfvadfvadfvasdvsvsvsfvasdfvsfvsdvadsdfvadfbad1"},
+        {id: 2, fundacja: "Organizacja 'Lorem ipsum 2'", cel: "pomoc osobą w trudnej sytuacji2", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvasdfvsfvsdvadsdfvadfbad2"},
+        {id: 3, fundacja: "Organizacja 'Lorem ipsum 3'", cel: "pomoc w trudnej sytuacji3", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfvasdfvsfvsdvadsdfvadfbad3"},
+        {id: 4, fundacja: "Organizacja 'Lorem ipsum 4'", cel: "pomoc osobą w trudnej sytuacji4", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfvasdfvsdvadsdfvadfbad4"},
+        {id: 5, fundacja: "Organizacja 'Lorem ipsum 5'", cel: "pomoc osobą w trudnej sytuacji5", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfvdfvsfvsdvadsdfvadfbad5"},
+        {id: 6, fundacja: "Organizacja 'Lorem ipsum 6'", cel: "pomoc osobą w trudnej sytuacji6", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfva1fvsdvadsdfvadfbad6"}
     ];
 
     let organizationText = " Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ";
    
     let lokal = [
-        {id: 1, fundacja: "Lokal 1", cel: "pomoc osobą w trudnej sytuacji1", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfvasdfvsfvsdvadsdfvadfb1"},
-        {id: 2, fundacja: "Lokal 2", cel: "pomoc osobą w trudnej sytuacji2", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfvasdfvsfvsdvadsdfvadad2"},
-        {id: 3, fundacja: "Lokal 3", cel: "pomoc osobą w trudnej sytuacji3", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfvasdfvsfvsdvadsddfbad3"}
+        {id: 1, fundacja: "Zbiórka 'Lorem ipsum 1'", cel: "pomoc osobą w trudnej sytuacji1", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfvasdfvsfvsdvadsdfvadfb1"},
+        {id: 2, fundacja: "Zbiórka 'Lorem ipsum 2'", cel: "pomoc osobą w trudnej sytuacji2", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfvasdfvsfvsdvadsdfvadad2"},
+        {id: 3, fundacja: "Zbiórka 'Lorem ipsum 3Cel i misja: '", cel: "pomoc osobą w trudnej sytuacji3", asortyment: "fvdfvsdfvadfvadfvasdvsvsdvsdvsfvasdfvsfvsdvadsddfbad3"}
     ];
 
     let lokalText = "At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi";
