@@ -4,8 +4,8 @@ let AboutUs_Text = () =>{
     return(
         <div className="AboutUs_Text">
             <h3>O Nas</h3>
-            <a></a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem.
+            <p className="AboutUs_Text_Icon-One"></p>
+            <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.
                 </p>
             <p className="AboutUs_Text_Icon"></p>
         </div>

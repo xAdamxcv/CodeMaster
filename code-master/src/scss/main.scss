@@ -172,17 +172,26 @@
 .SimpleStep_Title{
   background-color: #ffffff;
   width: 100%;
-  height: 150px;
+  height: 200px;
   text-align: center;
   font-size: 30px;
-  background-image: url(/assets/Decoration.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
-  //align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-top: 50px;
-  font-family: $font-base;
+  h2{
+    font-size: 38px;
+    font-family: $font-base;
+    font-weight: 400;
+  }
+  p{
+    width: 20%;
+    height: 40px;
+    background-image: url(/assets/Decoration.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+  }
   
 }
 .SimpleStep{
@@ -192,6 +201,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  
   div{
     width: 20%;
     height: 230px;
@@ -199,6 +209,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+  }
+  div:first-child{
+    margin-left: 150px;
+  }
+  div:last-child{
+    margin-right: 150px
   }
   .icon-One{
     width: 90px;
@@ -225,14 +241,25 @@
     background-repeat: no-repeat;
   }
   h3{
-    border-bottom:1px solid black;
     text-align: center;
+    font-family: $font-base;
+    font-size: 18px;
+    font-weight: 400;
   }
-  p{
+  .SimpleStep_BorderLine{
+    width: 30%;
+    height: 1px;
+    background: black;
+  }
+  .SimpleStep_P{
     text-align: center;
+    font-family: $font-base;
+    font-size: 16px;
+    font-weight: 400;
   }
   
 }
+
 .SimpleStepButton{
  // background-color: red;
   width: 100%;
@@ -258,10 +285,47 @@
 
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .AboutUs{
   background-color: hotpink;
   width: 100%;
-  height: 500px;
+  height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -283,11 +347,14 @@
     margin-left: 400px;
   }
   h3{
-    font-size: 30px;
+    font-size: 32px;
     width: 100px;
     height: 30px;
+    font-family: $font-base;
+    font-weight: 400;
+    margin-top: 100px;
   }
-  a{
+  .AboutUs_Text_Icon-One{
     width: 250px;
     height: 30px;
     background-image: url(/assets/Decoration.svg);
@@ -295,13 +362,15 @@
   p{
     width: 70%;
     height: 200px;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
+    font-family: $font-base;
+    font-weight: 400;
   }
 }
 .AboutUs_Picture{
   background-image: url(/assets/People.jpg);
-  background-size: 700px;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 50%;
   height: 100%;
@@ -482,6 +551,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .Contact{
   width: 100%;
   height: 750px;
@@ -511,14 +599,14 @@
 }
 .Contact_Form{
    //background-color: red;
-  width: 64%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
-  margin-left: 560px;
+  margin-left: 657px;
   h2, p{
    margin-left: -27px;
   }

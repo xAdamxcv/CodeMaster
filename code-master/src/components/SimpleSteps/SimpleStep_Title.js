@@ -2,7 +2,10 @@
 
 let SimpleStep_Title = () => {
     return(
-        <h2 className="SimpleStep_Title">Wystarczają 4 proste kroki</h2>
+        <div className="SimpleStep_Title">
+            <h2>Wystarczają 4 proste kroki</h2>
+            <p></p>
+        </div>
     )
 }
 
