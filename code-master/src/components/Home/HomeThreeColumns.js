@@ -4,24 +4,24 @@ let HomeThreeColumns = () =>{
     return (
         <section className="HomeThreeColumns">
             <div>
-                <h2>1</h2>
-                <a>ODDANYCH WORKÓW</a>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem.
+                <h2 className="HTC_HTwo">1</h2>
+                <h3 className="HTC_HThree ">ODDANYCH WORKÓW</h3>
+                <p className="HTC_P ">
+                Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.
                 </p>
             </div>
             <div>
-                <h2>2</h2>
-                <a>WSPARTYCH ORGANIZACJI</a>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem.
+                <h2 className="HTC_HTwo">2</h2>
+                <h3 className="HTC_HThree">WSPARTYCH ORGANIZACJI</h3>
+                <p className="HTC_P">
+                    Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.
                 </p>
             </div>
             <div>
-                <h2>3</h2>
-                <a>ZORGANIZOWANYCH ZBIÓREK</a>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem.
+                <h2 className="HTC_HTwo">3</h2>
+                <h3 className="HTC_HThree">ZORGANIZOWANYCH ZBIÓREK</h3>
+                <p className="HTC_P">
+                Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.
                 </p>
             </div>
         </section>

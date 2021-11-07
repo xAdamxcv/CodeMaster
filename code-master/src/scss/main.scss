@@ -13,17 +13,17 @@
 .HomeHeader{
   width: 100%;
   height: 50px;
- // background-color: none;
+//  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
+  margin-top: 20px;
   
 }
 .HomeHeader-One{
   width: 200px;
   height: 20px;
-  background-color: brown;
   display: flex;
   justify-content: space-around;
   .button{
@@ -41,33 +41,32 @@
 }
 
 .HomeHeader-Two{
-  width: 33%;
+  width: 550px;
   height: 20px;
-  background-color: brown;
+ // background-color: brown;
   display: flex;
   justify-content: space-around;
   .button{
     border: none;
-    width: 300px;
+    width: 70px;
     height: 20px;
     font-family: $font-base;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
-    //background-color: #ffffff;
-  }
-  .button-One{
-    border: none;
-    width: 200px;
-    height: 20px;
-    font-family: $font-base;
-    font-weight: 300;
-    font-size: 15px;
-    //background-color: #ffffff;
-  }
-  .HomeHeader-Two_button{
-    width: 400px;
+    text-decoration: none;
+    color: black;
   }
 }
+
+.HomeHeader-Two :nth-child(2){
+  width: 100px;
+  // background-color: blue;
+}
+.HomeHeader-Two :nth-child(4){
+  width: 200px;
+  // background-color: blue;
+}
+
 .xx{
   background-image: url(/assets/Home-Hero-Image.jpg); 
   background-size: contain;
@@ -92,29 +91,29 @@
   text-align: center;
 }
   .HomeCenter-One{
-    width: 500px;
+    width: 600px;
     height: 200px;
-    //justify-content: end;
-    margin-right: 150px;
+    // background: blue;
+    margin-right: 101px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     .HomeCenter_BC{
-    width: 50%;
-    height: 20px;
+    width: 40%;
+    height: 30px;
     background-image: url(/assets/Decoration.svg);
+    background-position: center;
     }
     .HomeCenter_Text{
       font-family: $font-base;
       font-size: 30px;
-      font-weight: bold
+      font-weight: 400  
     }
   }
   .HomeCenter-Two{
     width: 500px;
     height: 150px;
-    //justify-content: end;
     margin-right: 150px;
     display: flex;
     //flex-direction: column;
@@ -147,28 +146,64 @@
     justify-content: center;
     background-color: $color-three;
     width: 30%;
-    h2,a,p{
-      margin-top: 20px;
-    }
-    h2{
-      width: 50px;
-      height: 120px;
-      text-align: center;
-      font-size: 90px;
-    }
-    a{
-      width: 200px;
-      height: 25px;
-      text-align: center;
-    }
-    p{
-      width: 330px;
-      height: 70px;
-      padding: 10px;
-      text-align: center;
-    }
   }
+  .HTC_HTwo{
+    width: 50px;
+    height: 120px;
+    text-align: center;
+    font-size: 90px;
+    font-family: $font-base;
+    font-size: 90px;
+    font-weight: 300;
+  }
+  .HTC_HThree{
+    width: 300px;
+    height: 25px;
+    text-align: center;
+    font-family: $font-base;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .HTC_P{
+    width: 330px;
+    height: 70px;
+    padding: 10px;
+    text-align: center;
+    font-family: $font-Merriweather;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .SimpleStep_Title{
   background-color: #ffffff;
   width: 100%;
@@ -727,7 +762,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
 
 }
 .Log_Center{
@@ -746,7 +781,7 @@
     background-position:center;
   }
   .Log_One{
-    width: 60%;
+    width: 100%;
     height: 150px;
     background-color: $color-one;
     display: flex;
@@ -764,7 +799,7 @@
     }
   }
   .Log_two{
-    width: 60%;
+    width: 100%;
     height: 35px;
     display: flex;
     justify-content: space-between;

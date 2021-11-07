@@ -14,7 +14,7 @@ let HomeCenter = () => {
         <HomeHeader />
         <section className="HomeCenter">
             <div className="HomeCenter-One">
-                <p className="HomeCenter_Text">Zacznij pomagać</p>
+                <p className="HomeCenter_Text">Zacznij pomagać!</p>
                 <p className="HomeCenter_Text">Oddaj niechciane rzeczy w zaufane ręce</p>
                 <p className="HomeCenter_BC"></p>
             </div>
